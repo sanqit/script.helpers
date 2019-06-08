@@ -1,0 +1,31 @@
+{
+    "name": "script.helpers",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha --require ts-node/register test/**/*.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sanqit/script.helpers.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sanqit/script.helpers/issues"
+    },
+    "homepage": "https://github.com/sanqit/script.helpers#readme",
+    "devDependencies": {
+        "@types/chai": "^4.1.7",
+        "@types/mocha": "^5.2.6",
+        "chai": "^4.2.0",
+        "mocha": "^6.0.2",
+        "ts-node": "^8.0.3",
+        "typescript": "^3.4.1"
+    }
+}

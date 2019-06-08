@@ -23,19 +23,14 @@ describe("JSONTool tests", () => {
             }
         };
 
-        console.log(person.sayHi.toString());
-
         var serialized = JSONTools.stringify(person);
         var parsed = JSONTools.parse(serialized);
-        console.log(parsed.sayHi.toString());
 
         serialized = JSONTools.stringify(parsed);
         parsed = JSONTools.parse(serialized);
-        console.log(parsed.sayHi.toString());
 
         serialized = JSONTools.stringify(parsed);
         parsed = JSONTools.parse(serialized);
-        console.log(parsed.sayHi.toString());
 
         expect(parsed.sayHi('Tom', 'Петров'), "Message1").eq("Susan says hi Tom Петров!");
         expect(parsed.methods.test(1, 2, 3), "Message2").eq(8);
